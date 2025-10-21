@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}><StackProvider app={stackClientApp}><StackTheme>
-        <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-blue-500 bg-gray-800 text-white">
+        <div className="py-2 bg-blue-500 bg-gray-800 text-white">
           {children}
         </div>
       </StackTheme></StackProvider></body>
