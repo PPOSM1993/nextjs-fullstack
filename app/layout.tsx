@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { StackProvider, StackTheme } from "@stackframe/stack";
+import { stackClientApp } from "../stack/client";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -24,9 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}><StackProvider app={stackClientApp}><StackTheme>
+        <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-blue-500 bg-gray-800 text-white">
+          {children}
+        </div>
+      </StackTheme></StackProvider></body>
     </html>
   );
 }
