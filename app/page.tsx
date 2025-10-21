@@ -31,7 +31,7 @@ export default function Home() {
 
             <Link
               href="/sign-in"
-              className="bg-gray-100 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-none transition duration-300 ease-in-out flex items-center text-gray-800 to hover:text-white"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-none transition duration-300 ease-in-out flex items-center"
             >
               <IoMdSchool className="mr-2" />
               Learn More
