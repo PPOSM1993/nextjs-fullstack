@@ -3,7 +3,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-    const demoUserId = "a5e38d71-0237-431e-b606-b4a4461f0d82";
+    const demoUserId = "78ff3a34-2564-4869-ba28-5f16deed869e";
 
     await prisma.product.createMany({
         data: Array.from({ length: 25 }).map((_, i) => ({

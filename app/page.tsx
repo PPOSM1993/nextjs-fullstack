@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { FiLogIn } from "react-icons/fi";
 import { IoMdSchool } from "react-icons/io";
+import { MdDashboard } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -30,12 +31,14 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/sign-in"
+              href="#"
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-none transition duration-300 ease-in-out flex items-center"
             >
               <IoMdSchool className="mr-2" />
               Learn More
             </Link>
+
+
           </div>
 
 
